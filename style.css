@@ -27,6 +27,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 } 
 
 a {
@@ -34,8 +35,37 @@ a {
 	text-decoration: none;
 }
 
-nav a {
+#firstdiv {
+	display: none;
+	position: absolute;
+	z-index: -1;
+	top:75px;
+	text-align: center;
+	
+}
+
+#firstdiv a{
+	display: block;
+	background-color: var(--dark-blue);
+	color: white;
+	width:100vw;
+}
+.first {
 	padding: 10px;
+	
+}
+
+#hamburger, #cross{
+	font-size: 30px;
+	color: var(--dark-blue);
+}
+
+#hamburger {
+	display: block;
+}
+
+#cross {
+	display: none;
 }
 
 main {
@@ -58,7 +88,7 @@ main {
 }
 
 #fcc img {
-	width: 300px;
+	width: 270px;
 	border-radius: 10px;
 	filter: drop-shadow(7px 7px 2px #8589ab);
 	margin-bottom: 5px;
@@ -87,7 +117,25 @@ main {
 		font-weight: bold;
 	} 
 
-	nav a {	padding: 20px; }
+	#firstdiv{
+		display: block;
+		position:static;
+	}
+
+	#firstdiv a{
+		display: inline;
+		background: var(--medium-blue);
+		color: var(--dark-blue);
+	}
+
+	.first {	
+		padding: 20px; 
+		display: block;
+	}
+
+	#hamburger {
+		display: none;
+	}
 
 	#landing {
 		height: 80vh;

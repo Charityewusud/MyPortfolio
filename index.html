@@ -13,9 +13,18 @@
   <body>
 
 			<nav id="navbar">
-				<a href="#landing">About</a>
-				<a href="#fcc">My Projects</a>
-				<a href="#footer">Contacts</a>
+				
+				<div id="firstdiv">
+					<a href="#landing" class="first">About</a>
+					<a href="#fcc" class="first">My Projects</a>
+					<a href="#footer" class="first">Contacts</a>
+				</div>
+
+				<div id="toggle">
+					<a href="#"><i class="fas fa-hamburger" id="hamburger"></i></a>
+					<a href="#"><i class="fas fa-times" id="cross"></i></a>
+				</div>
+				
 			</nav>
 
 			<main>
@@ -67,6 +76,8 @@
 			<footer id="footer" class="d-flex justify-content-center align-items-center">
 					<a href="https://codepen.io/charityewusud" target="_blank" class="nav-link text-white"><i class="fab fa-codepen" id="codepen"></i> My Codepen</a>
 			</footer>
+
+		<script src="menu.js"></script>
 
   </body>
 </html>
